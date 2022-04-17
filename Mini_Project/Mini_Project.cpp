@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 
-#define size 20
+#define size 30
 
 using namespace std;
 
@@ -14,22 +14,15 @@ public:
 
     void addBook() {
         cout << "Enter Author Name: ";
-        cin >> author;
-        // cin.ignore();
-        // getline(cin, author);
+        cin.ignore();
+        getline(cin, author);
         cout << "Enter Title Name: ";
-        cin >> title;
-        // cin.ignore();
-        // getline(cin, title);
+        getline(cin, title);
         cout << "Enter Publisher Name: ";
-        cin >> publisher;
-        // cin.ignore();
-        // getline(cin, publisher);
+        getline(cin, publisher);
         cout << "Enter Price: ";
-        // cin.ignore();
         cin >> price;
         cout << "Enter Number of Copies: ";
-        // cin.ignore();
         cin >> copies;
         cout << endl;
     }
@@ -44,13 +37,10 @@ public:
 
     void getBuyInfo() {
         cout << "Enter Title of Book: ";
-        cin >> requestedTitle;
-        // cin.ignore();
-        // getline(cin, requestedTitle);
+        cin.ignore();
+        getline(cin, requestedTitle);
         cout << "Enter Author of Book: ";
-        cin >> requestedAuthor;
-        // cin.ignore();
-        // getline(cin, requestedAuthor);
+        getline(cin, requestedAuthor);
         cout << "Enter Number of Books to Buy: ";
         cin >> requestedCopies;
         cout << endl;
@@ -106,7 +96,7 @@ int main()  {
                         if(shop.requestedCopies <= books[i].copies){
                             books[i].copies -= shop.requestedCopies;
                             cout << "Book(s) bought successfully!" << endl;
-                            cout << "Total cost: " << books->price * shop.requestedCopies << endl;
+                            cout << "Total cost: " << books[i].price * shop.requestedCopies << endl;
                             cout << books[i].copies << " copies left in the store." << endl << endl;
                             break;
                         }
