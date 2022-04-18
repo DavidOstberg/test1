@@ -147,7 +147,7 @@ int main()  {
             if(found != true){
             cout << shop.requestedTitle << " not found in inventory." << endl << endl;}
         }
-        else if(input == 5) {break;}
+        else if(input == 5) {delete[] books; break;}
         printMenu();
     }
 }
