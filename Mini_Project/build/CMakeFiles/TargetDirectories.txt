@@ -1,0 +1,3 @@
+/home/dostber1/projects/Mini_Project/build/CMakeFiles/rebuild_cache.dir
+/home/dostber1/projects/Mini_Project/build/CMakeFiles/mini_project.dir
+/home/dostber1/projects/Mini_Project/build/CMakeFiles/edit_cache.dir

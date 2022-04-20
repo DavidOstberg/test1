@@ -1,88 +1,25 @@
 #include <iostream>
 #include <string>
 
+#include <Books.hpp>
+#include <Shop.hpp>
+
 #define size 30
 
 using namespace std;
 
-class Books {   
-
-public:
-    string author, title, publisher;
-    int copies;
-    float price;
-
-    void addBook() {
-        cout << "Enter Author Name: ";
-        cin.ignore();
-        getline(cin, author);
-        cout << "Enter Title Name: ";
-        getline(cin, title);
-        cout << "Enter Publisher Name: ";
-        getline(cin, publisher);
-        cout << "Enter Price: ";
-        cin >> price;
-        cout << "Enter Number of Copies: ";
-        cin >> copies;
-        cout << endl;
-    }
-
-};
-
-class Shop : public Books {
-
-public:
-    string requestedAuthor, requestedTitle;
-    int requestedCopies;
-
-    void getBuyInfo() {
-        cout << "Enter Title of Book: ";
-        cin.ignore();
-        getline(cin, requestedTitle);
-        cout << "Enter Author of Book: ";
-        getline(cin, requestedAuthor);
-        cout << "Enter Number of Books to Buy: ";
-        cin >> requestedCopies;
-        cout << endl;
-    }
-
-    void getSearchOrEditInfo() {
-        cin.ignore();
-        cout << "Enter Title of Book: ";
-        getline(cin, requestedTitle);
-        cout << "Enter Author of Book: ";
-        getline(cin, requestedAuthor);
-        cout << endl;
-    }
-
-};
-
-void printMenu() {
-    cout << "\tMENU" << endl
-    << "1. Entry of New Book" << endl
-    << "2. Buy Book" << endl
-    << "3. Search for Book" << endl
-    << "4. Edit Details of Book" << endl
-    << "5. Exit" << endl << endl
-    << "Enter your choice: ";
-}
-
-int readMenuInput() {
-    int menuInput;
-    cin >> menuInput;
-    cout << endl;
-    return menuInput;
-}
+void PrintMenu();
+int ReadMenuInput();
 
 int main()  {
 
     Books* books = new Books[size];
     Shop shop;
-    int input, count = 0;
+    int input;
     bool found = false;
-    printMenu();
-    for(int x = 0; x < size; x++)   {
-        input = readMenuInput();
+    PrintMenu();
+    for(int x = 0; x <= size; x++)   {
+        input = ReadMenuInput();
         if((input < 1) || (input > 5))
         {cout << input << " is not an option, try again!"<<endl<<endl;}
         else if(input == 1) {books[x].addBook();}
@@ -147,7 +84,9 @@ int main()  {
             if(found != true){
             cout << shop.requestedTitle << " not found in inventory." << endl << endl;}
         }
-        else if(input == 5) {delete[] books; break;}
-        printMenu();
+        else if(input == 5) {break;}
+        if(x < size) {PrintMenu();}
     }
+    cout << "Closing bookstore for today, see you tomorrow!" << endl;    
+    delete[] books;
 }

@@ -1,0 +1,32 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+class Shop : public Books {
+
+public:
+    string requestedAuthor, requestedTitle;
+    int requestedCopies;
+
+    void getBuyInfo() {
+        cout << "Enter Title of Book: ";
+        cin.ignore();
+        getline(cin, requestedTitle);
+        cout << "Enter Author of Book: ";
+        getline(cin, requestedAuthor);
+        cout << "Enter Number of Books to Buy: ";
+        cin >> requestedCopies;
+        cout << endl;
+    }
+
+    void getSearchOrEditInfo() {
+        cin.ignore();
+        cout << "Enter Title of Book: ";
+        getline(cin, requestedTitle);
+        cout << "Enter Author of Book: ";
+        getline(cin, requestedAuthor);
+        cout << endl;
+    }
+
+};

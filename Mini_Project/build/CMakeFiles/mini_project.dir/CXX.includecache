@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/Books.hpp
+iostream
+-
+string
+-
+
+../include/Shop.hpp
+iostream
+-
+string
+-
+
+/home/dostber1/projects/Mini_Project/Mini_Project.cpp
+iostream
+-
+string
+-
+Books.hpp
+-
+Shop.hpp
+-
+
+/home/dostber1/projects/Mini_Project/src/PrintMenu.cpp
+iostream
+-
+
+/home/dostber1/projects/Mini_Project/src/ReadMenuInput.cpp
+iostream
+-
+
