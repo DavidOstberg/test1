@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/mini_project.dir/Mini_Project.cpp.o"
+  "CMakeFiles/mini_project.dir/main.cpp.o"
   "CMakeFiles/mini_project.dir/src/PrintMenu.cpp.o"
   "CMakeFiles/mini_project.dir/src/ReadMenuInput.cpp.o"
   "mini_project.pdb"

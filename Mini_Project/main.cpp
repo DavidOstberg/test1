@@ -4,7 +4,7 @@
 #include <Books.hpp>
 #include <Shop.hpp>
 
-#define size 30
+#define size 50
 
 using namespace std;
 
@@ -22,7 +22,7 @@ int main()  {
         input = ReadMenuInput();
         if((input < 1) || (input > 5))
         {cout << input << " is not an option, try again!"<<endl<<endl;}
-        else if(input == 1) {books[x].addBook();}
+        else if(input == 1) {cin.ignore(); books[x].addBook();}
         else if(input == 2) {shop.getBuyInfo();
                 int i;
                 for(i = 0; i < size; i++)   {
@@ -41,8 +41,7 @@ int main()  {
                     found = true; break;}
                 }
             }
-            if(found != true){
-            cout << shop.requestedTitle << " not found in inventory." << endl << endl;}
+            if(found != true){shop.printSearchFailed();}
         }
         else if(input == 3) {shop.getSearchOrEditInfo();
             found = false;
@@ -50,16 +49,11 @@ int main()  {
                 if(shop.requestedTitle == books[i].title && shop.requestedAuthor == books[i].author)   {
                     found = true;
                     cout << "Book found successfully!" << endl;
-                    cout << "Author: " << books[i].author << endl;
-                    cout << "Title: " << books[i].title << endl;
-                    cout << "Publisher: " << books[i].publisher << endl;
-                    cout << "Price: " << books[i].price << endl;
-                    cout << books[i].copies << " copies available in store." << endl << endl;
+                    books[i].printBook();
                     break;
                 }
             }
-            if(found != true){
-            cout << shop.requestedTitle << " not found in inventory." << endl << endl;}
+            if(found != true){shop.printSearchFailed();}
         }
         else if(input == 4) {shop.getSearchOrEditInfo();
             found = false;
@@ -67,22 +61,11 @@ int main()  {
                 if(shop.requestedTitle == books[i].title && shop.requestedAuthor == books[i].author)   {
                     found = true;
                     cout << "Book found successfully!" << endl;
-                    cout << "Enter Author Name: ";
-                    cin >> books[i].author;
-                    cout << "Enter Title Name: ";
-                    cin >> books[i].title;
-                    cout << "Enter Publisher Name: ";
-                    cin >> books[i].publisher;
-                    cout << "Enter Price: ";
-                    cin >> books[i].price;
-                    cout << "Enter Copies: ";
-                    cin >> books[i].copies;
-                    cout << endl << endl;
+                    books[i].addBook();
                     break;
                     }
                 }
-            if(found != true){
-            cout << shop.requestedTitle << " not found in inventory." << endl << endl;}
+            if(found != true){shop.printSearchFailed();}
         }
         else if(input == 5) {break;}
         if(x < size) {PrintMenu();}

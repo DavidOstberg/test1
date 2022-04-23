@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/dostber1/projects/Mini_Project/Mini_Project.cpp" "/home/dostber1/projects/Mini_Project/build/CMakeFiles/mini_project.dir/Mini_Project.cpp.o"
+  "/home/dostber1/projects/Mini_Project/main.cpp" "/home/dostber1/projects/Mini_Project/build/CMakeFiles/mini_project.dir/main.cpp.o"
   "/home/dostber1/projects/Mini_Project/src/PrintMenu.cpp" "/home/dostber1/projects/Mini_Project/build/CMakeFiles/mini_project.dir/src/PrintMenu.cpp.o"
   "/home/dostber1/projects/Mini_Project/src/ReadMenuInput.cpp" "/home/dostber1/projects/Mini_Project/build/CMakeFiles/mini_project.dir/src/ReadMenuInput.cpp.o"
   )

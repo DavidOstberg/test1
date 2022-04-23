@@ -123,32 +123,32 @@ mini_project/fast:
 	$(MAKE) -f CMakeFiles/mini_project.dir/build.make CMakeFiles/mini_project.dir/build
 .PHONY : mini_project/fast
 
-Mini_Project.o: Mini_Project.cpp.o
+main.o: main.cpp.o
 
-.PHONY : Mini_Project.o
+.PHONY : main.o
 
 # target to build an object file
-Mini_Project.cpp.o:
-	$(MAKE) -f CMakeFiles/mini_project.dir/build.make CMakeFiles/mini_project.dir/Mini_Project.cpp.o
-.PHONY : Mini_Project.cpp.o
+main.cpp.o:
+	$(MAKE) -f CMakeFiles/mini_project.dir/build.make CMakeFiles/mini_project.dir/main.cpp.o
+.PHONY : main.cpp.o
 
-Mini_Project.i: Mini_Project.cpp.i
+main.i: main.cpp.i
 
-.PHONY : Mini_Project.i
+.PHONY : main.i
 
 # target to preprocess a source file
-Mini_Project.cpp.i:
-	$(MAKE) -f CMakeFiles/mini_project.dir/build.make CMakeFiles/mini_project.dir/Mini_Project.cpp.i
-.PHONY : Mini_Project.cpp.i
+main.cpp.i:
+	$(MAKE) -f CMakeFiles/mini_project.dir/build.make CMakeFiles/mini_project.dir/main.cpp.i
+.PHONY : main.cpp.i
 
-Mini_Project.s: Mini_Project.cpp.s
+main.s: main.cpp.s
 
-.PHONY : Mini_Project.s
+.PHONY : main.s
 
 # target to generate assembly for a file
-Mini_Project.cpp.s:
-	$(MAKE) -f CMakeFiles/mini_project.dir/build.make CMakeFiles/mini_project.dir/Mini_Project.cpp.s
-.PHONY : Mini_Project.cpp.s
+main.cpp.s:
+	$(MAKE) -f CMakeFiles/mini_project.dir/build.make CMakeFiles/mini_project.dir/main.cpp.s
+.PHONY : main.cpp.s
 
 src/PrintMenu.o: src/PrintMenu.cpp.o
 
@@ -213,9 +213,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... mini_project"
 	@echo "... edit_cache"
-	@echo "... Mini_Project.o"
-	@echo "... Mini_Project.i"
-	@echo "... Mini_Project.s"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
 	@echo "... src/PrintMenu.o"
 	@echo "... src/PrintMenu.i"
 	@echo "... src/PrintMenu.s"

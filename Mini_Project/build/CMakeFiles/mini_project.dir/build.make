@@ -57,28 +57,28 @@ include CMakeFiles/mini_project.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/mini_project.dir/flags.make
 
-CMakeFiles/mini_project.dir/Mini_Project.cpp.o: CMakeFiles/mini_project.dir/flags.make
-CMakeFiles/mini_project.dir/Mini_Project.cpp.o: ../Mini_Project.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dostber1/projects/Mini_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/mini_project.dir/Mini_Project.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mini_project.dir/Mini_Project.cpp.o -c /home/dostber1/projects/Mini_Project/Mini_Project.cpp
+CMakeFiles/mini_project.dir/main.cpp.o: CMakeFiles/mini_project.dir/flags.make
+CMakeFiles/mini_project.dir/main.cpp.o: ../main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dostber1/projects/Mini_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/mini_project.dir/main.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mini_project.dir/main.cpp.o -c /home/dostber1/projects/Mini_Project/main.cpp
 
-CMakeFiles/mini_project.dir/Mini_Project.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mini_project.dir/Mini_Project.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dostber1/projects/Mini_Project/Mini_Project.cpp > CMakeFiles/mini_project.dir/Mini_Project.cpp.i
+CMakeFiles/mini_project.dir/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mini_project.dir/main.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dostber1/projects/Mini_Project/main.cpp > CMakeFiles/mini_project.dir/main.cpp.i
 
-CMakeFiles/mini_project.dir/Mini_Project.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mini_project.dir/Mini_Project.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dostber1/projects/Mini_Project/Mini_Project.cpp -o CMakeFiles/mini_project.dir/Mini_Project.cpp.s
+CMakeFiles/mini_project.dir/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mini_project.dir/main.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dostber1/projects/Mini_Project/main.cpp -o CMakeFiles/mini_project.dir/main.cpp.s
 
-CMakeFiles/mini_project.dir/Mini_Project.cpp.o.requires:
+CMakeFiles/mini_project.dir/main.cpp.o.requires:
 
-.PHONY : CMakeFiles/mini_project.dir/Mini_Project.cpp.o.requires
+.PHONY : CMakeFiles/mini_project.dir/main.cpp.o.requires
 
-CMakeFiles/mini_project.dir/Mini_Project.cpp.o.provides: CMakeFiles/mini_project.dir/Mini_Project.cpp.o.requires
-	$(MAKE) -f CMakeFiles/mini_project.dir/build.make CMakeFiles/mini_project.dir/Mini_Project.cpp.o.provides.build
-.PHONY : CMakeFiles/mini_project.dir/Mini_Project.cpp.o.provides
+CMakeFiles/mini_project.dir/main.cpp.o.provides: CMakeFiles/mini_project.dir/main.cpp.o.requires
+	$(MAKE) -f CMakeFiles/mini_project.dir/build.make CMakeFiles/mini_project.dir/main.cpp.o.provides.build
+.PHONY : CMakeFiles/mini_project.dir/main.cpp.o.provides
 
-CMakeFiles/mini_project.dir/Mini_Project.cpp.o.provides.build: CMakeFiles/mini_project.dir/Mini_Project.cpp.o
+CMakeFiles/mini_project.dir/main.cpp.o.provides.build: CMakeFiles/mini_project.dir/main.cpp.o
 
 
 CMakeFiles/mini_project.dir/src/PrintMenu.cpp.o: CMakeFiles/mini_project.dir/flags.make
@@ -131,14 +131,14 @@ CMakeFiles/mini_project.dir/src/ReadMenuInput.cpp.o.provides.build: CMakeFiles/m
 
 # Object files for target mini_project
 mini_project_OBJECTS = \
-"CMakeFiles/mini_project.dir/Mini_Project.cpp.o" \
+"CMakeFiles/mini_project.dir/main.cpp.o" \
 "CMakeFiles/mini_project.dir/src/PrintMenu.cpp.o" \
 "CMakeFiles/mini_project.dir/src/ReadMenuInput.cpp.o"
 
 # External object files for target mini_project
 mini_project_EXTERNAL_OBJECTS =
 
-mini_project: CMakeFiles/mini_project.dir/Mini_Project.cpp.o
+mini_project: CMakeFiles/mini_project.dir/main.cpp.o
 mini_project: CMakeFiles/mini_project.dir/src/PrintMenu.cpp.o
 mini_project: CMakeFiles/mini_project.dir/src/ReadMenuInput.cpp.o
 mini_project: CMakeFiles/mini_project.dir/build.make
@@ -151,7 +151,7 @@ CMakeFiles/mini_project.dir/build: mini_project
 
 .PHONY : CMakeFiles/mini_project.dir/build
 
-CMakeFiles/mini_project.dir/requires: CMakeFiles/mini_project.dir/Mini_Project.cpp.o.requires
+CMakeFiles/mini_project.dir/requires: CMakeFiles/mini_project.dir/main.cpp.o.requires
 CMakeFiles/mini_project.dir/requires: CMakeFiles/mini_project.dir/src/PrintMenu.cpp.o.requires
 CMakeFiles/mini_project.dir/requires: CMakeFiles/mini_project.dir/src/ReadMenuInput.cpp.o.requires
 
