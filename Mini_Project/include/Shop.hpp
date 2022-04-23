@@ -28,7 +28,7 @@ public:
         cout << endl;
     }
 
-    void getSearchOrEditInfo() {
+    void getSearchInput() {
         cin.ignore();
         cout << "Enter Title of Book: ";
         getline(cin, requestedTitle);
@@ -39,6 +39,18 @@ public:
 
     void printSearchFailed()    {
         cout << requestedTitle << " by " << requestedAuthor << " not found in inventory." << endl << endl;
+    }
+
+    void printBookFound()   {
+        cout << "Book found successfully!" << endl;
+    }
+
+    void printShopClosing()   {
+        cout << "Closing bookstore for today, see you tomorrow!" << endl;
+    }
+
+    void printPurchaseOK()  {
+        cout << "Book(s) bought successfully!" << endl;
     }
 
 };
